@@ -11,6 +11,8 @@
 		06FCAB542B166A04003B2832 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCAB532B166A04003B2832 /* ContentView.swift */; };
 		06FCAB562B166A06003B2832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB552B166A06003B2832 /* Assets.xcassets */; };
 		06FCAB592B166A06003B2832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB582B166A06003B2832 /* Preview Assets.xcassets */; };
+		06FCAB602B166AEC003B2832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB5F2B166AEC003B2832 /* Assets.xcassets */; };
+		06FCAB632B166B2C003B2832 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCAB622B166B2C003B2832 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		06FCAB532B166A04003B2832 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06FCAB552B166A06003B2832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06FCAB582B166A06003B2832 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06FCAB5F2B166AEC003B2832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		06FCAB622B166B2C003B2832 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			children = (
 				06FCAB512B166A04003B2832 /* SwiftlyCoinApp.swift */,
 				06FCAB532B166A04003B2832 /* ContentView.swift */,
+				06FCAB612B166B18003B2832 /* Extensions */,
 				06FCAB552B166A06003B2832 /* Assets.xcassets */,
+				06FCAB5F2B166AEC003B2832 /* Assets.xcassets */,
 				06FCAB572B166A06003B2832 /* Preview Content */,
 			);
 			path = SwiftlyCoin;
@@ -65,6 +71,14 @@
 				06FCAB582B166A06003B2832 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06FCAB612B166B18003B2832 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06FCAB622B166B2C003B2832 /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FCAB592B166A06003B2832 /* Preview Assets.xcassets in Resources */,
+				06FCAB602B166AEC003B2832 /* Assets.xcassets in Resources */,
 				06FCAB562B166A06003B2832 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FCAB632B166B2C003B2832 /* ColorExtension.swift in Sources */,
 				06FCAB542B166A04003B2832 /* ContentView.swift in Sources */,
 				06FCAB522B166A04003B2832 /* SwiftlyCoinApp.swift in Sources */,
 			);
@@ -275,11 +291,11 @@
 				DEVELOPMENT_TEAM = 9P2557SXV6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swiftly Coin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +320,11 @@
 				DEVELOPMENT_TEAM = 9P2557SXV6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swiftly Coin";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
