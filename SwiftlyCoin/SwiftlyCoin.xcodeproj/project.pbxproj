@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0620640C2B18F13C007E82F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620640B2B18F13C007E82F4 /* HomeView.swift */; };
+		062064102B18F15A007E82F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620640F2B18F15A007E82F4 /* HomeViewModel.swift */; };
+		062064142B18FB09007E82F4 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062064132B18FB09007E82F4 /* CircleButtonView.swift */; };
+		066A0FC62B1958B5002991E8 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A0FC52B1958B5002991E8 /* CircleButtonAnimationView.swift */; };
+		066A0FC92B1A4357002991E8 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A0FC82B1A4357002991E8 /* CoinModel.swift */; };
 		06FCAB522B166A04003B2832 /* SwiftlyCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCAB512B166A04003B2832 /* SwiftlyCoinApp.swift */; };
 		06FCAB542B166A04003B2832 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCAB532B166A04003B2832 /* ContentView.swift */; };
 		06FCAB562B166A06003B2832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB552B166A06003B2832 /* Assets.xcassets */; };
 		06FCAB592B166A06003B2832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB582B166A06003B2832 /* Preview Assets.xcassets */; };
-		06FCAB602B166AEC003B2832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB5F2B166AEC003B2832 /* Assets.xcassets */; };
 		06FCAB632B166B2C003B2832 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCAB622B166B2C003B2832 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0620640B2B18F13C007E82F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0620640F2B18F15A007E82F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		062064132B18FB09007E82F4 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		066A0FC52B1958B5002991E8 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		066A0FC82B1A4357002991E8 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		06FCAB4E2B166A04003B2832 /* SwiftlyCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftlyCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FCAB512B166A04003B2832 /* SwiftlyCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftlyCoinApp.swift; sourceTree = "<group>"; };
 		06FCAB532B166A04003B2832 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06FCAB552B166A06003B2832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06FCAB582B166A06003B2832 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		06FCAB5F2B166AEC003B2832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		06FCAB622B166B2C003B2832 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +44,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062064092B18F117007E82F4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				066A0FC72B1A4349002991E8 /* Models */,
+				062064112B18FADB007E82F4 /* Components */,
+				0620640A2B18F128007E82F4 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0620640A2B18F128007E82F4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0620640E2B18F149007E82F4 /* ViewModels */,
+				0620640D2B18F143007E82F4 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0620640D2B18F143007E82F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0620640B2B18F13C007E82F4 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0620640E2B18F149007E82F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0620640F2B18F15A007E82F4 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		062064112B18FADB007E82F4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				062064122B18FAED007E82F4 /* CicrleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		062064122B18FAED007E82F4 /* CicrleButton */ = {
+			isa = PBXGroup;
+			children = (
+				062064132B18FB09007E82F4 /* CircleButtonView.swift */,
+				066A0FC52B1958B5002991E8 /* CircleButtonAnimationView.swift */,
+			);
+			path = CicrleButton;
+			sourceTree = "<group>";
+		};
+		066A0FC72B1A4349002991E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				066A0FC82B1A4357002991E8 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		06FCAB452B166A04003B2832 = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +125,9 @@
 			children = (
 				06FCAB512B166A04003B2832 /* SwiftlyCoinApp.swift */,
 				06FCAB532B166A04003B2832 /* ContentView.swift */,
+				062064092B18F117007E82F4 /* Core */,
 				06FCAB612B166B18003B2832 /* Extensions */,
 				06FCAB552B166A06003B2832 /* Assets.xcassets */,
-				06FCAB5F2B166AEC003B2832 /* Assets.xcassets */,
 				06FCAB572B166A06003B2832 /* Preview Content */,
 			);
 			path = SwiftlyCoin;
@@ -140,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FCAB592B166A06003B2832 /* Preview Assets.xcassets in Resources */,
-				06FCAB602B166AEC003B2832 /* Assets.xcassets in Resources */,
 				06FCAB562B166A06003B2832 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062064142B18FB09007E82F4 /* CircleButtonView.swift in Sources */,
+				066A0FC62B1958B5002991E8 /* CircleButtonAnimationView.swift in Sources */,
 				06FCAB632B166B2C003B2832 /* ColorExtension.swift in Sources */,
+				0620640C2B18F13C007E82F4 /* HomeView.swift in Sources */,
+				066A0FC92B1A4357002991E8 /* CoinModel.swift in Sources */,
 				06FCAB542B166A04003B2832 /* ContentView.swift in Sources */,
+				062064102B18F15A007E82F4 /* HomeViewModel.swift in Sources */,
 				06FCAB522B166A04003B2832 /* SwiftlyCoinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

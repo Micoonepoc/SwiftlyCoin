@@ -4,7 +4,10 @@ import SwiftUI
 struct SwiftlyCoinApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                HomeView()
+                    .toolbar(.hidden)
+            }
         }
     }
 }
