@@ -2,17 +2,30 @@
 //  HomeViewModel.swift
 //  SwiftlyCoin
 //
-//  Created by Михаил on 30.11.2023.
+//  Created by Михаил on 09.12.2023.
 //
 
-import SwiftUI
+import Foundation
+import Combine
 
-struct HomeViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class HomeViewModel: ObservableObject {
+    
+    @Published var allCoins: [CoinModel] = []
+    @Published var portlofioCoins: [CoinModel] = []
+    
+    private var cancellables = Set<AnyCancellable>()
+    private let dataService = CoinDataService()
+    
+    init() {
+        addSubscriber()
     }
-}
-
-#Preview {
-    HomeViewModel()
+    
+     func addSubscriber() {
+         dataService.$allCoins
+             .sink { [weak self] (returnedCoins) in
+                 self?.allCoins = returnedCoins
+             }
+             .store(in: &cancellables)
+    }
+    
 }
