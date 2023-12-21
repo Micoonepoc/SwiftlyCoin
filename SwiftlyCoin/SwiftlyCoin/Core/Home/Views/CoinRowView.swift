@@ -39,11 +39,12 @@ extension CoinRowView {
         HStack {
             Text("\(coin.rank)")
                 .foregroundStyle(Color.colorTheme.secondaryText)
-            Circle()
+            CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
             Text(coin.symbol.uppercased())
                 .bold()
         }
+        .padding(.horizontal)
     }
     
     private var centerColumn: some View {
@@ -69,6 +70,7 @@ extension CoinRowView {
             }
             .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
         }
+        .padding(.horizontal)
     }
     
 }
