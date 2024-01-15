@@ -1,10 +1,3 @@
-//
-//  CoinRowView.swift
-//  SwiftlyCoin
-//
-//  Created by Михаил on 02.12.2023.
-//
-
 import SwiftUI
 
 struct CoinRowView: View {

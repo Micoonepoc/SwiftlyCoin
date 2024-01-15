@@ -1,10 +1,3 @@
-//
-//  HomeViewModel.swift
-//  SwiftlyCoin
-//
-//  Created by Михаил on 09.12.2023.
-//
-
 import Foundation
 import Combine
 

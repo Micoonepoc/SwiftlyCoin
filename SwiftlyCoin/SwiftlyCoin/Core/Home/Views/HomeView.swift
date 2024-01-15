@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  SwiftlyCoin
-//
-//  Created by Михаил on 30.11.2023.
-//
-
 import SwiftUI
 
 struct HomeView: View {
@@ -19,6 +12,8 @@ struct HomeView: View {
                         
             VStack {
                 HomeViewHeader
+                
+                HomeStatisticView(showPortfolio: $showPortfolio)
                 
                 SearchBarView(textFieldText: $vm.searchText)
                 

@@ -1,10 +1,3 @@
-//
-//  CircleButtonAnimationView.swift
-//  SwiftlyCoin
-//
-//  Created by Михаил on 01.12.2023.
-//
-
 import SwiftUI
 
 struct CircleButtonAnimationView: View {
