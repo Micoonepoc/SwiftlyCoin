@@ -1,2 +1,2 @@
 # SwiftlyCoin
-Cryptocurrency app
+Cryptocurrency app (Not finished)
