@@ -25,6 +25,11 @@
 		0665F8AD2B47E9E600B5EBBC /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0665F8AC2B47E9E600B5EBBC /* UIApplicationExtension.swift */; };
 		066A0FC62B1958B5002991E8 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A0FC52B1958B5002991E8 /* CircleButtonAnimationView.swift */; };
 		066A0FC92B1A4357002991E8 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A0FC82B1A4357002991E8 /* CoinModel.swift */; };
+		06B51CAA2B63EBE200865D48 /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51CA92B63EBE200865D48 /* XmarkButton.swift */; };
+		06B51CAC2B63EF0100865D48 /* AddCoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51CAB2B63EF0100865D48 /* AddCoinImageView.swift */; };
+		06B6E4242B66B1B700750D91 /* CoinsAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 06B6E4232B66B1B600750D91 /* CoinsAnimation.json */; };
+		06C108E92B65C4C50044ACD3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 06C108E82B65C4C50044ACD3 /* Lottie */; };
+		06C108EC2B6652EA0044ACD3 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C108EB2B6652EA0044ACD3 /* LottieView.swift */; };
 		06E71D342B54A24E00DA4FED /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E71D332B54A24E00DA4FED /* StatisticModel.swift */; };
 		06E71D372B54A45000DA4FED /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E71D362B54A45000DA4FED /* StatisticView.swift */; };
 		06E71D3B2B54A9BF00DA4FED /* HomeStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E71D3A2B54A9BF00DA4FED /* HomeStatisticView.swift */; };
@@ -33,6 +38,7 @@
 		06FCAB562B166A06003B2832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB552B166A06003B2832 /* Assets.xcassets */; };
 		06FCAB592B166A06003B2832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FCAB582B166A06003B2832 /* Preview Assets.xcassets */; };
 		06FCAB632B166B2C003B2832 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCAB622B166B2C003B2832 /* ColorExtension.swift */; };
+		06FF6E212B61C62900CD3668 /* AddCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF6E202B61C62900CD3668 /* AddCoinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,10 @@
 		0665F8AC2B47E9E600B5EBBC /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		066A0FC52B1958B5002991E8 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		066A0FC82B1A4357002991E8 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		06B51CA92B63EBE200865D48 /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
+		06B51CAB2B63EF0100865D48 /* AddCoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoinImageView.swift; sourceTree = "<group>"; };
+		06B6E4232B66B1B600750D91 /* CoinsAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CoinsAnimation.json; sourceTree = "<group>"; };
+		06C108EB2B6652EA0044ACD3 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		06E71D332B54A24E00DA4FED /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		06E71D362B54A45000DA4FED /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		06E71D3A2B54A9BF00DA4FED /* HomeStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatisticView.swift; sourceTree = "<group>"; };
@@ -63,6 +73,7 @@
 		06FCAB552B166A06003B2832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06FCAB582B166A06003B2832 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06FCAB622B166B2C003B2832 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		06FF6E202B61C62900CD3668 /* AddCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C108E92B65C4C50044ACD3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0620640B2B18F13C007E82F4 /* HomeView.swift */,
+				06FF6E202B61C62900CD3668 /* AddCoinView.swift */,
 				06E71D3A2B54A9BF00DA4FED /* HomeStatisticView.swift */,
 				065A817C2B1BB33D000B5290 /* CoinRowView.swift */,
 			);
@@ -116,6 +129,8 @@
 		062064112B18FADB007E82F4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				06C108EA2B65C4E10044ACD3 /* Lottie */,
+				06B51CA82B63EB9800865D48 /* Xmark */,
 				06E71D352B54A3D500DA4FED /* StatisticsView */,
 				0665F8A92B47E53D00B5EBBC /* SearchBar */,
 				0627512A2B3356F80031DA46 /* CoinImage */,
@@ -138,6 +153,7 @@
 			children = (
 				0627512B2B3357060031DA46 /* CoinImageView.swift */,
 				0627512F2B3382910031DA46 /* CoinImageViewModel.swift */,
+				06B51CAB2B63EF0100865D48 /* AddCoinImageView.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -179,6 +195,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		06B51CA82B63EB9800865D48 /* Xmark */ = {
+			isa = PBXGroup;
+			children = (
+				06B51CA92B63EBE200865D48 /* XmarkButton.swift */,
+			);
+			path = Xmark;
+			sourceTree = "<group>";
+		};
+		06C108EA2B65C4E10044ACD3 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				06C108EB2B6652EA0044ACD3 /* LottieView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		06E71D352B54A3D500DA4FED /* StatisticsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +245,7 @@
 				062064092B18F117007E82F4 /* Core */,
 				06FCAB612B166B18003B2832 /* Extensions */,
 				06FCAB552B166A06003B2832 /* Assets.xcassets */,
+				06B6E4232B66B1B600750D91 /* CoinsAnimation.json */,
 				06FCAB572B166A06003B2832 /* Preview Content */,
 			);
 			path = SwiftlyCoin;
@@ -253,6 +286,9 @@
 			dependencies = (
 			);
 			name = SwiftlyCoin;
+			packageProductDependencies = (
+				06C108E82B65C4C50044ACD3 /* Lottie */,
+			);
 			productName = SwiftlyCoin;
 			productReference = 06FCAB4E2B166A04003B2832 /* SwiftlyCoin.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +317,9 @@
 				Base,
 			);
 			mainGroup = 06FCAB452B166A04003B2832;
+			packageReferences = (
+				06C108E72B65C4C50044ACD3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 06FCAB4F2B166A04003B2832 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +336,7 @@
 			files = (
 				06FCAB592B166A06003B2832 /* Preview Assets.xcassets in Resources */,
 				06FCAB562B166A06003B2832 /* Assets.xcassets in Resources */,
+				06B6E4242B66B1B700750D91 /* CoinsAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,13 +358,17 @@
 				062064142B18FB09007E82F4 /* CircleButtonView.swift in Sources */,
 				06E71D372B54A45000DA4FED /* StatisticView.swift in Sources */,
 				0627512C2B3357060031DA46 /* CoinImageView.swift in Sources */,
+				06C108EC2B6652EA0044ACD3 /* LottieView.swift in Sources */,
 				066A0FC62B1958B5002991E8 /* CircleButtonAnimationView.swift in Sources */,
 				065A81832B1C7B79000B5290 /* DoubleExtension.swift in Sources */,
+				06B51CAC2B63EF0100865D48 /* AddCoinImageView.swift in Sources */,
 				06FCAB632B166B2C003B2832 /* ColorExtension.swift in Sources */,
 				0665F8AB2B47E55700B5EBBC /* SearchBarView.swift in Sources */,
 				0620640C2B18F13C007E82F4 /* HomeView.swift in Sources */,
 				066A0FC92B1A4357002991E8 /* CoinModel.swift in Sources */,
+				06B51CAA2B63EBE200865D48 /* XmarkButton.swift in Sources */,
 				06166C3F2B5B294200A9363C /* MarketDataService.swift in Sources */,
+				06FF6E212B61C62900CD3668 /* AddCoinView.swift in Sources */,
 				062751302B3382910031DA46 /* CoinImageViewModel.swift in Sources */,
 				06FCAB542B166A04003B2832 /* ContentView.swift in Sources */,
 				0665F8AD2B47E9E600B5EBBC /* UIApplicationExtension.swift in Sources */,
@@ -536,6 +580,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06C108E72B65C4C50044ACD3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06C108E82B65C4C50044ACD3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06C108E72B65C4C50044ACD3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06FCAB462B166A04003B2832 /* Project object */;
 }
