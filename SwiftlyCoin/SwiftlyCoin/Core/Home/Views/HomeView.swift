@@ -80,6 +80,10 @@ extension HomeView {
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             }
         }
+        .refreshable {
+            print("refreshing coin list")
+            vm.reloadData()
+        }
         .listStyle(PlainListStyle())
     }
     
@@ -89,6 +93,10 @@ extension HomeView {
                 CoinRowView(coin: coin, showHoldingsColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             }
+        }
+        .refreshable {
+            print("refresh portfolio list")
+            vm.reloadData()
         }
         .listStyle(PlainListStyle())
     }

@@ -6,12 +6,15 @@ class HomeViewModel: ObservableObject {
     @Published var allCoins: [CoinModel] = []
     @Published var portlofioCoins: [CoinModel] = []
     
+    @Published var isLoading: Bool = false
+    
     @Published var searchText = ""
     
     @Published var statistics: [StatisticModel] = []
     
     private var cancellables = Set<AnyCancellable>()
     private let marketDataService = MarketDataService()
+    private let portfolioDataService = PortfolioDataService()
     private let coinDataService = CoinDataService()
     
     init() {
@@ -52,11 +55,38 @@ class HomeViewModel: ObservableObject {
              }
              .sink { [weak self] (returnedData) in
                  self?.statistics = returnedData
+                 self?.isLoading = false
+             }
+             .store(in: &cancellables)
+         
+         $allCoins
+             .combineLatest(portfolioDataService.$savedEntities)
+             .map { (coinModels, portfolioEntities) -> [CoinModel] in
+                 
+                 coinModels
+                     .compactMap { (coin) -> CoinModel? in
+                         guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id}) else {
+                             return nil
+                         }
+                         return coin.updateHoldings(amount: entity.amount)
+                     }
+             }
+             .sink { [weak self] (returnedCoins) in
+                 self?.portlofioCoins = returnedCoins
              }
              .store(in: &cancellables)
     }
     
+    func updatePortfolio(coin: CoinModel, amount: Double) {
+        portfolioDataService.updatePortfolio(coin: coin, amount: amount)
+    }
     
+    func reloadData() {
+        isLoading = true
+        coinDataService.getCoins()
+        marketDataService.getMarketData()
+        HapticManager.notification(type: .success)
+    }
     
     func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {
         guard !text.isEmpty else {

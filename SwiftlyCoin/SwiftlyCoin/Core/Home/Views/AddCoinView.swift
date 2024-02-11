@@ -28,7 +28,7 @@ struct AddCoinView: View {
                        coinInput
                     } else {
                         LottieView(animationFileName: "CoinsAnimation", loopMode: .loop)
-                            .frame(width: 400, height: 400)
+                            .frame(width: 380, height: 400)
                     }
                     
                     Spacer()
@@ -53,6 +53,11 @@ struct AddCoinView: View {
                     }
                 }
             })
+            .onChange(of: vm.searchText) {
+                if vm.searchText == "" {
+                    cleanCoin()
+                }
+            }
             .navigationTitle("Add some coins")
         }
     }
@@ -70,7 +75,7 @@ struct AddCoinViewPreview: PreviewProvider {
 extension AddCoinView {
     
     private var coinList: some View {
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 10) {
                 ForEach(vm.allCoins) { coin in
                     AddCoinImageView(coin: coin)
@@ -78,7 +83,7 @@ extension AddCoinView {
                         .padding(4)
                         .onTapGesture {
                             withAnimation(.easeIn) {
-                                selectedCoin = coin
+                                updateSelectedCoin(coin: coin)
                             }
                         }
                         .background(
@@ -90,6 +95,17 @@ extension AddCoinView {
         }
         .frame(height: 150)
         .padding(.leading)
+    }
+    
+    private func updateSelectedCoin(coin: CoinModel) {
+        selectedCoin = coin
+        
+        if let portfolioCoin = vm.portlofioCoins.first(where: { $0.id == coin.id}),
+           let amount = portfolioCoin.currentHoldings {
+            amountText = "\(amount)"
+        } else {
+            amountText = ""
+        }
     }
     
     private func getCurrentValue() -> Double {
@@ -126,7 +142,12 @@ extension AddCoinView {
     
     private func saveButtonPressed() {
         
-        guard let coin = selectedCoin else { return }
+        guard 
+            let coin = selectedCoin,
+            let amount = Double(amountText)
+        else { return }
+        
+        vm.updatePortfolio(coin: coin, amount: amount)
         
         withAnimation {
             showCheckmark = true
