@@ -100,7 +100,7 @@ extension AddCoinView {
     private func updateSelectedCoin(coin: CoinModel) {
         selectedCoin = coin
         
-        if let portfolioCoin = vm.portlofioCoins.first(where: { $0.id == coin.id}),
+        if let portfolioCoin = vm.portfolioCoins.first(where: { $0.id == coin.id}),
            let amount = portfolioCoin.currentHoldings {
             amountText = "\(amount)"
         } else {
