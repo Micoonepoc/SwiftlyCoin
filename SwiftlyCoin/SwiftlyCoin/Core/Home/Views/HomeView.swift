@@ -5,6 +5,8 @@ struct HomeView: View {
     @EnvironmentObject private var vm: HomeViewModel
     @State var showPortfolio: Bool = false
     @State var showAddCoin: Bool = false
+    @State var selectedCoin: CoinModel? = nil
+    @State var showDetails: Bool = false
     
     
     var body: some View {
@@ -37,6 +39,14 @@ struct HomeView: View {
                 Spacer(minLength: 0)
             }
         }
+        .navigationDestination(isPresented: $showDetails) {
+            DetailLoadingView(coin: $selectedCoin)
+        }
+    }
+    
+    private func segue(coin: CoinModel) {
+        selectedCoin = coin
+        showDetails.toggle()
     }
 }
 
@@ -78,6 +88,9 @@ extension HomeView {
             ForEach(vm.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
         }
         .refreshable {
@@ -92,6 +105,9 @@ extension HomeView {
             ForEach(vm.portfolioCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
         }
         .refreshable {
@@ -157,3 +173,5 @@ struct HomeViewPreview: PreviewProvider {
         .environmentObject(dev.homeVM)
     }
 }
+
+
